@@ -483,12 +483,23 @@ fn run(
                     stream.packet_count,
                     stream.octet_count,
                 );
-                let _ = socket.send(&report);
+                let _ = send_sender_report(socket, peer, &report);
                 stream.last_report = Some(Instant::now());
             }
         }
     }
     info!("mirror sender stopped");
+}
+
+/// Sender reports share the unconnected RTP socket so receiver feedback comes
+/// back to the same port. Unlike RTP's `send_to`, the old `send` call failed
+/// with `ENOTCONN` after the socket was deliberately made unconnected.
+fn send_sender_report(
+    socket: &UdpSocket,
+    peer: SocketAddr,
+    report: &[u8],
+) -> std::io::Result<usize> {
+    socket.send_to(report, peer)
 }
 
 /// Sends one packet, waiting out a full send buffer rather than dropping it:
@@ -588,6 +599,25 @@ fn retransmit(socket: &UdpSocket, peer: SocketAddr, stream: &Stream, nack: &rtcp
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn sender_report_works_on_the_unconnected_rtp_socket() {
+        let receiver = UdpSocket::bind("127.0.0.1:0").unwrap();
+        receiver
+            .set_read_timeout(Some(Duration::from_secs(1)))
+            .unwrap();
+        let sender = UdpSocket::bind("127.0.0.1:0").unwrap();
+        assert!(sender.peer_addr().is_err());
+
+        let report = [0x80, 200, 0, 0];
+        send_sender_report(&sender, receiver.local_addr().unwrap(), &report).unwrap();
+
+        let mut received = [0; 4];
+        let (size, from) = receiver.recv_from(&mut received).unwrap();
+        assert_eq!(size, report.len());
+        assert_eq!(received, report);
+        assert_eq!(from, sender.local_addr().unwrap());
+    }
 
     fn chunk() -> EncodedChunk {
         gstreamer::init().unwrap();
