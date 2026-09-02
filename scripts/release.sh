@@ -22,7 +22,14 @@ confirm() {
 
 meta="extension/$UUID/metadata.json"
 
-# Preflight: warn if tree is not clean but allow user to continue
+echo '==> Running checks (make check)'
+if ! make check-all; then
+    echo 'error: checks failed. Revert the bump with: git checkout -- .' >&2
+    exit 1
+fi
+
+# Warn if tree is not clean but allow user to continue
+echo
 if [ -n "$(git status --porcelain)" ]; then
     echo 'warning: working tree is not clean'
     git status --short
@@ -38,13 +45,6 @@ confirm "Release v$new?"
 echo
 echo '==> Setting version'
 sh scripts/set-version.sh "$new"
-
-echo
-echo '==> Running checks (make check)'
-if ! make check-all; then
-    echo 'error: checks failed. Revert the bump with: git checkout -- .' >&2
-    exit 1
-fi
 
 echo
 echo '==> Building the extension zip'
