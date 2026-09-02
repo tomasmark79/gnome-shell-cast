@@ -200,8 +200,8 @@ fn parse_feedback(body: &[u8], sender_ssrc: u32, hint: i64, events: &mut Receive
         .iter()
         .take(usize::from(loss_count))
     {
-        let frame_id = expand_frame_id(*id, checkpoint.saturating_add(1));
-        let packet_id = u16::from_be_bytes([*packet_hi, *packet_lo]);
+        let frame_id = expand_frame_id(id, checkpoint.saturating_add(1));
+        let packet_id = u16::from_be_bytes([packet_hi, packet_lo]);
         events.nacks.push(Nack {
             frame_id,
             packet_id,
