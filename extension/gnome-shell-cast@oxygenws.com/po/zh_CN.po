@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 3\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: 2026-08-14 10:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Simplified Chinese <https://github.com/omid/gnome-shell-"
@@ -321,13 +321,13 @@ msgstr "自动会优先使用显卡；若画面破碎请选择软件"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:169
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:58
-#, fuzzy
 msgid "Video codec"
-msgstr "视频编码器"
+msgstr "视频编解码器"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
-msgstr ""
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
+msgstr "自动模式允许接收器从可用的编解码器中选择"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:68
@@ -450,13 +450,6 @@ msgstr ""
 "件。当显卡驱动产生破碎或卡顿的画面时请选择软件。“vaapi”（Intel、"
 "AMD）、“nvenc”（NVIDIA）和“v4l2”（Arm 开发板）会固定使用某一种硬件接口；若无"
 "法满足该选择，投屏将失败并给出提示。"
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
-msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69
 msgid ""

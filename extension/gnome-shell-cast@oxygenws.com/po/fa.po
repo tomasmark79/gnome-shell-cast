@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 1\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: 2026-08-04 00:22\n"
 "Last-Translator: \n"
 "Language-Team: Persian <https://github.com/omid/gnome-shell-cast>\n"
@@ -326,13 +326,13 @@ msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:169
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:58
-#, fuzzy
 msgid "Video codec"
-msgstr "رمزگذار ویدیو"
+msgstr "کدک ویدیو"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
-msgstr ""
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
+msgstr "حالت خودکار به گیرنده اجازه می‌دهد از میان کدک‌های موجود انتخاب کند"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:68
@@ -459,13 +459,6 @@ msgstr ""
 "بریده‌بریده می‌سازد، نرم‌افزاری را برگزینید. «vaapi» (Intel، AMD) و «nvenc» "
 "(NVIDIA) و «v4l2» (بردهای Arm) یک واسط سخت‌افزاری را تثبیت می‌کنند؛ اگر گزینه "
 "برآورده نشود، پخش با یک پیام شکست می‌خورد."
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
-msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69
 msgid ""

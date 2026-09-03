@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 3\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: 2026-08-14 10:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Brazilian Portuguese <https://github.com/omid/gnome-shell-"
@@ -337,13 +337,13 @@ msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:169
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:58
-#, fuzzy
 msgid "Video codec"
-msgstr "Codificador de vídeo"
+msgstr "Codec de vídeo"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
-msgstr ""
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
+msgstr "Automático permite que o receptor escolha entre os codecs disponíveis"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:68
@@ -479,13 +479,6 @@ msgstr ""
 "imagem quebrada ou travando. “vaapi” (Intel, AMD), “nvenc” (NVIDIA) e “v4l2” "
 "(placas Arm) fixam uma única interface de hardware; a transmissão falha com "
 "uma mensagem se a escolha não puder ser atendida."
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
-msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69
 msgid ""

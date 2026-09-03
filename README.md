@@ -142,7 +142,7 @@ changing your configuration, and the firewall and portal settings to check.
 Preferences (resolution cap, framerate, bitrate, codec and encoder) are under
 the ⚙ menu entry or
 `gnome-extensions prefs gnome-shell-cast@oxygenws.com`. Leave the codec on
-*Automatic* normally; force VP8 if a receiver freezes or shows a broken picture.
+*Automatic* normally.
 
 ## Troubleshooting
 

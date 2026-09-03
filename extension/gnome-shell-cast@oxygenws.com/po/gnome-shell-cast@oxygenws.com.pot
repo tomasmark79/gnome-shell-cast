@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 4\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,7 +319,8 @@ msgid "Video codec"
 msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
 msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
@@ -434,13 +435,6 @@ msgid ""
 "broken or stuttering picture. \"vaapi\" (Intel, AMD), \"nvenc\" (NVIDIA) and "
 "\"v4l2\" (Arm boards) pin one hardware API. Casting fails with a message if "
 "the choice cannot be met."
-msgstr ""
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
 msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 3\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: 2026-08-14 10:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Bengali <https://github.com/omid/gnome-shell-cast>\n"
@@ -326,13 +326,13 @@ msgstr "স্বয়ংক্রিয় আপনার গ্রাফি�
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:169
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:58
-#, fuzzy
 msgid "Video codec"
-msgstr "ভিডিও এনকোডার"
+msgstr "ভিডিও কোডেক"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
-msgstr ""
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
+msgstr "স্বয়ংক্রিয় মোড রিসিভারকে উপলভ্য কোডেকগুলি থেকে বেছে নিতে দেয়"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:68
@@ -457,13 +457,6 @@ msgstr ""
 "এবং সফটওয়্যারে ফিরে যায়। গ্রাফিক্স ড্রাইভার ভাঙা বা আটকে যাওয়া ছবি দিলে সফটওয়্যার "
 "বেছে নিন। “vaapi” (Intel, AMD), “nvenc” (NVIDIA) এবং “v4l2” (Arm বোর্ড) একটি "
 "হার্ডওয়্যার ইন্টারফেস নির্দিষ্ট করে; পছন্দ পূরণ করা না গেলে কাস্ট বার্তাসহ ব্যর্থ হয়।"
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
-msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69
 msgid ""

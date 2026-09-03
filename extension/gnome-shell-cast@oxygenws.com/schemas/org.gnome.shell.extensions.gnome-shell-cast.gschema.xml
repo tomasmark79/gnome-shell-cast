@@ -56,7 +56,7 @@
       </choices>
       <default>'auto'</default>
       <summary>Video codec</summary>
-      <description>Which codec to offer for Cast Streaming. "auto" offers every codec available on this computer and lets the receiver choose. Force VP8 when a receiver freezes or displays a broken picture with another codec.</description>
+      <description>Automatic lets the receiver choose from the available codecs</description>
     </key>
     <key name="video-format" type="s">
       <choices>

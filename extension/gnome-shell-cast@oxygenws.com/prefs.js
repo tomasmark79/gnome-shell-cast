@@ -167,7 +167,7 @@ export default class GnomeShellCastPreferences extends ExtensionPreferences {
 
         const codecRow = new Adw.ComboRow({
             title: _('Video codec'),
-            subtitle: _('Choose VP8 if the receiver freezes or displays a broken picture'),
+            subtitle: _('Automatic lets the receiver choose from the available codecs'),
             model: new Gtk.StringList({ strings: codecLabels }),
             selected: Math.max(0, CODEC_VALUES.indexOf(settings.get_string('video-codec'))),
         });

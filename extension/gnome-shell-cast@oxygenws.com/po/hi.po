@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Shell Cast 3\n"
 "Report-Msgid-Bugs-To: https://github.com/omid/gnome-shell-cast/issues\n"
-"POT-Creation-Date: 2026-09-02 21:09+0200\n"
+"POT-Creation-Date: 2026-09-03 08:40+0200\n"
 "PO-Revision-Date: 2026-08-14 10:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Hindi <https://github.com/omid/gnome-shell-cast>\n"
@@ -326,13 +326,13 @@ msgstr "स्वचालित आपके ग्राफ़िक्स क
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:169
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:58
-#, fuzzy
 msgid "Video codec"
-msgstr "वीडियो एन्कोडर"
+msgstr "वीडियो कोडेक"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:170
-msgid "Choose VP8 if the receiver freezes or displays a broken picture"
-msgstr ""
+#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
+msgid "Automatic lets the receiver choose from the available codecs"
+msgstr "स्वचालित उपलब्ध कोडेक में से रिसीवर को चुनने देता है"
 
 #: extension/gnome-shell-cast@oxygenws.com/prefs.js:180
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:68
@@ -458,13 +458,6 @@ msgstr ""
 "तस्वीर बनाए तो सॉफ़्टवेयर चुनें। “vaapi” (Intel, AMD), “nvenc” (NVIDIA) और “v4l2” "
 "(Arm बोर्ड) एक ही हार्डवेयर इंटरफ़ेस तय करते हैं; विकल्प पूरा न हो सकने पर कास्ट संदेश के "
 "साथ विफल हो जाता है।"
-
-#: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:59
-msgid ""
-"Which codec to offer for Cast Streaming. \"auto\" offers every codec "
-"available on this computer and lets the receiver choose. Force VP8 when a "
-"receiver freezes or displays a broken picture with another codec."
-msgstr ""
 
 #: extension/gnome-shell-cast@oxygenws.com/schemas/org.gnome.shell.extensions.gnome-shell-cast.gschema.xml:69
 msgid ""
